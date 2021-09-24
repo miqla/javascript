@@ -7,6 +7,8 @@ number: jangan diawali dengan 0, penanda desimal adalah titik.
 	operator logika: && and, || or, ! not, == sama dengan. % bagi, 
 		&& true/false nya ikut yg terakir, || asal salah 1 nya benar maka benar
 		! membalikkan fakta -> x=10, !(x<20) maka false
+		== untuk angka, === untuk string
+		hati-hati dengan tipe data
 	operator string: + (menggabungkan string)
 		a= apple, b = pen, a+b= "applepen"	-> a + " " + b = "apple pen"
 		10 + "10" = "1010", 	10 + 10 + "10" = "2010",	"10"+10+10="101010"
