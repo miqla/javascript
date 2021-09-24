@@ -1,6 +1,7 @@
 JavaScript;
 
 	Tipe data: number, string, boolean, object, function, undefined
+	huruf kapital ngaruh di javascript
 
 number: jangan diawali dengan 0, penanda desimal adalah titik.
 	operator logika: && and, || or, ! not, == sama dengan. % bagi, 
@@ -26,4 +27,21 @@ String: boleh pake "" atau ''
 				var nama = "mana woy"
 		   		    nama.length	 -> 8
 
+Boolean = True False (B nya kapital)
+
+deklarasi variabel: var, let, const
+	var nya boleh angka tpi posisi angkanya gabole di depan, -> 1gabole, bole1
+	keyword & reserved word= kata yg gabole jadi nama variabel	,listnya gugling ae
+
+----------------------------------------------------------------------------------------------
 klik 'atas' di console utk memanggil apa yg pernah kita tulis. clear console= ctrl + k
+
+console.log();	-> utk menuliskan sesuatu didalam console
+
+for(nilai awal; kondisi terminasi; increment/decrement){
+perintah
+}
+
+for (noAngkot=7; noAngkot <= jmlAngkot; noAngkot++){
+            console.log('Angkot No. ' + noAngkot + ' sedang tidak beroperasi.')
+        }
