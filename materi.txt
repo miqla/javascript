@@ -1,0 +1,29 @@
+JavaScript;
+
+	Tipe data: number, string, boolean, object, function, undefined
+
+number: jangan diawali dengan 0, penanda desimal adalah titik.
+	operator logika: && and, || or, ! not, == sama dengan. % bagi, 
+		&& true/false nya ikut yg terakir, || asal salah 1 nya benar maka benar
+		! membalikkan fakta -> x=10, !(x<20) maka false
+	operator string: + (menggabungkan string)
+		a= apple, b = pen, a+b= "applepen"	-> a + " " + b = "apple pen"
+		10 + "10" = "1010", 	10 + 10 + "10" = "2010",	"10"+10+10="101010"
+		angka + angka = angka,	angka + string = string
+	operator typeof	-> typeof(operand)	-> typeof(10)=number, typeof("10")= string
+		untuk mengetahui tipe data apa dari sebuah nilai
+	operator kondisi: (kondisi) ? benar : salah
+			(x%2==0) ? "genap" : "ganjil"	
+			dy liat kondisinya kalo benar dy ambil yg pertama, 
+					klo salah dy ambil yg setelah tanda :
+
+String: boleh pake "" atau ''
+	"juma'at" boljug 'juma"at'
+		escape character= (\)biar tanda '" tdk dibaca sbagai pengakhir kalimat
+				'jum\'at'		more details -> gugling
+	.length = menghitung jumlah karakter didalam string 
+		"mana woy".length  -> 8 (spasinya dihitung)
+				var nama = "mana woy"
+		   		    nama.length	 -> 8
+
+klik 'atas' di console utk memanggil apa yg pernah kita tulis. clear console= ctrl + k
