@@ -9,6 +9,7 @@ number: jangan diawali dengan 0, penanda desimal adalah titik.
 		! membalikkan fakta -> x=10, !(x<20) maka false
 		== untuk angka, === untuk string
 		hati-hati dengan tipe data
+		x += 5 -> x=x+5
 	operator string: + (menggabungkan string)
 		a= apple, b = pen, a+b= "applepen"	-> a + " " + b = "apple pen"
 		10 + "10" = "1010", 	10 + 10 + "10" = "2010",	"10"+10+10="101010"
@@ -47,3 +48,10 @@ perintah
 for (noAngkot=7; noAngkot <= jmlAngkot; noAngkot++){
             console.log('Angkot No. ' + noAngkot + ' sedang tidak beroperasi.')
         }
+---------------------------------------------------------------------------------------------
+cara bikin segitiga, pascal, kebalik, papan catur, dll
+	di eps 25 seri javascript
+
+
+
+26 -> 12:43
