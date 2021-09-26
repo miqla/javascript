@@ -11,7 +11,7 @@
 
     <script>
 
-        var penumpang = ['jono', undefined, 'joni'];
+        var penumpang = [];
         var tambahPenumpang = function(namaPenumpang, penumpang){
             // jika angkot kosong
             if( penumpang.length == 0){
@@ -45,6 +45,30 @@
                     }
                 }
             }
+        }
+
+        var hapusPenumpang = function(namaPenumpang, penumpang){
+            // jika angkot kosong
+            if( penumpang.length == 0){
+                console.log('Angkot masih kosong.');
+                // return penumpang;
+            } else{
+                // telusuri seluruh kursi dari awal
+                for(var i = 0; i < penumpang.length; i++){
+                    // jika nama penumpang sesuai, hapus penumpang dengan mengubah namnya
+                    if( penumpang[i] == namaPenumpang){
+                        // menjadi undefined
+                        penumpang[i] = undefined;
+                        return penumpang;
+                    // jika tidak ada nama yang sesuai
+                    } else if( i == penumpang.length - 1){
+                        console.log(namaPenumpang + ' tidak ada didalam angkot');
+                        // kembalikan isi array & keluar dari function
+                        // return penumpang;
+                    }
+                }
+            }
+            return penumpang;
         }
 
     </script>
