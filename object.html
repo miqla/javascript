@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    <h1>Belajar tentang object di javascript</h1>
+
+    <script>
+
+        // Membuat object dengan berbagai cara      var nama_var = {};
+        // 1. Object Literal
+        var mhs1 = {
+            nama : 'Jono Joni',     //misahinnya pake koma
+            nrp : '485787568',
+            email : 'jonojoni@icloud.com',
+            jurusan : 'Teknik Informatika'
+        }
+
+        var mhs2 = {
+            nama : 'Jeni',     //misahinnya pake koma
+            nrp : '485734573',
+            email : 'jeni@gmail.com',
+            jurusan : 'Teknik Sipil'
+        }
+
+        // 2. Function Declaration
+        function buatObjectMahasiswa(nama, nrp, email, jurusan){
+            var mhs = {};
+            mhs.nama = nama;
+            mhs.nrp = nrp;
+            mhs.email = email;
+            mhs.jurusan = jurusan;
+            return mhs;
+        }
+
+        var mhs3 = buatObjectMahasiswa('jono','6595758','jono@gmail.com','Teknik Industri');
+        var mhs4 = buatObjectMahasiswa('joni','65908070','joni@gmail.com','Teknik Makanan');
+
+
+        // 3. Constructor           mirip funtion declaration tpi ada bberapa yg beda, biasanya (gawajib) nama functionnya pake kapital, utk membedakan dy dgn function declaration
+        function Mahasiswa (nama, nrp, email, jurusan){
+            // var this = {};       gaperlu nulis var dan return
+            this.nama = nama;
+            this.nrp = nrp;
+            this.email = email;
+            this.jurusan = jurusan;
+            // return this;
+        }
+                //jgn lupa pake new
+        var mhs4 = new Mahasiswa('Erik','5484999','erik@hotmail.com','Teknik Mesin')
+
+    </script>
+</body>
+</html>
