@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <h1>Belajar Array</h1>
+
+    <script>
+
+        // Manipulasi Array
+
+
+        // 1. Menambah isi array
+        // var arr = [];
+        // arr[0] = "Joni";
+        // arr[1] = "jono";
+        // arr[2] = "jane";
+        // arr[6] = "jeni"; // urutan array nya gabole ada yg longkap        
+        // console.log(arr);
+
+        // 2. Menghapus isi array
+        // var arr = ['joni', 'jono', 'jeni'];
+        // arr[1] = undefined;     //array yg index nya 1 dihapus
+        // console.log(arr);
+
+        // 3. Menampilkan isi array
+        // var arr = ['joni', 'jono', 'jeni', 'doddy','fulan'];
+        // for(var i = 0; i < arr.length; i++){     < sesuai panjang array-nya
+        //     console.log('Mahasiswa ke-' + (i+1) + ' : ' + arr[i]);
+        // }
+
+
+        // Method pada array
+        // var arr = ['joni', 'jono', 'jeni'];          main
+        // 1. join
+        // console.log(arr.join(' - '));
+
+        // 2. Push & Pop
+        // arr.push('Doddy');  //menambahkan isi array diakhir, boleh diisi > 1
+        // arr.pop();      //menghilangkan isi array yg terakhir
+        // arr.pop();      //boleh 2 kali
+        // console.log(arr.join(' - '));
+
+        // 3. Unshift & shift
+        // arr.unshift('dodi');    //menambahkan isi array diawal, boleh diisi > 1
+        // arr.shift();        //menghilangkan isi array yg diawal
+        // console.log(arr.join(' - '));
+
+        // 4. splice    - menambahkan elemen ditengah tengah
+        // splice(indexAwal, mauDihapusBerapa, elemenBaru1, elemenBaru2, ...)
+        // arr.splice(2, 0, 'gue', 'elu');     //mau di elemen keberapa
+        // arr.splice(1, 2, 'dodi', 'pitri');  //dihapus 2
+        // console.log(arr.join(' - '));
+
+        // 5. slice     mengiris sebuah array menjadi sebuah array baru
+        // slice(indexAwal, indexAkhir)     index akhir nya ga kebawa
+        // var arr = ['joni', 'jono', 'jeni', 'jane', 'juny'];
+        // var arr2 = arr.slice(1, 4);
+        // console.log(arr.join(' - '));
+        // console.log(arr2.join(' - '));
+// ------------------------------------------------------------------------------
+        // 6. forEach       nampilin isi array satu"
+        // var angka = [1,2,3,4,5,6,7,8];
+        // var nama = ['jono', 'joni', 'jeni'];
+        // for( var i = 0; i < angka.length; i++){
+        //     console.log(angka[i]);
+        // }
+
+        // angka.forEach(function(e){
+        //     console.log(e);
+        // });
+        // nama.forEach(function(e, i){
+        //     console.log('Mahasiswa ke-' + (i+1) + ' adalah : ' + e);
+        // })
+
+        // 7.map        mirip forEach, tapi dy bisa return
+        // var angka = [1,2,5,3,6,8,4];
+        // var angka2 = angka.map(function(e){
+        //     return e * 2;
+        // });
+        // console.log(angka2.join(' - '));
+
+        // 8. sort          mengurutkan angka nya dari kecil ke besar
+        // var angka = [1,2,5,3,6,8,4];
+        // angka.sort();
+        // console.log(angka.join(' - '));
+        // hati" kalo angkanya 10, 20, yg diliat angka pertamanya
+        // harus ada function tambahan 
+        // var angka = [1,2,10,5,20,3,6,8,4];
+        // angka.sort(function(a,b){
+        //     return a-b;
+        // });
+        // console.log(angka.join(' - '));
+
+        // 9. filter (nyari angka, tpi nnti hasilnya dalam bentuk array, hasilnya bisa banyak)
+        // var angka = [1,2,10,5,20,3,6,8,4];
+        // var angka2 = angka.filter(function(x){
+        //     return x > 5;  // > boleh diganti ==
+        // });
+        // console.log(angka2.join(' - '));
+            // find     mirip filter tapi hasilnya cuma bisa 1 (angka) 
+        var angka = [1,2,10,5,20,3,6,8,4];
+        var angka2 = angka.find(function(x){
+            return x > 5;  // > boleh diganti ==
+        });
+        console.log(angka2);
+
+    </script>
+</body>
+</html>

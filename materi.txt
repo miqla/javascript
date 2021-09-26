@@ -52,6 +52,7 @@ for (noAngkot=7; noAngkot <= jmlAngkot; noAngkot++){
 cara bikin segitiga, pascal, kebalik, papan catur, dll
 	di eps 25 seri javascript
 
-
-
 26 -> 12:43
+--------------------------------------------------------------------------------------------
+parseInt()  	-> mengubah string ke integer
+var a = parseInt(prompt('Masukkan nilai : '));
